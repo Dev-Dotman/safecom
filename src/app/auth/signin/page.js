@@ -118,9 +118,9 @@ export default function SignIn() {
           <p>Admin: admin@safecom.com / password123</p>
           <p>Delivery: delivery@safecom.com / password123</p>
           <p>User: user@safecom.com / password123</p>
-          <p className="mt-2 text-gray-400">
+          {/* <p className="mt-2 text-gray-400">
             (Seed the DB first: POST /api/seed)
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
