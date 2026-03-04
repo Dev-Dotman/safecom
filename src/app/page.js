@@ -49,14 +49,22 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section className="relative text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1920&auto=format&fit=crop')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/85 via-emerald-800/75 to-emerald-900/60" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Shop with{" "}
-              <span className="text-indigo-200">Confidence</span>
+              <span className="text-emerald-300">Confidence</span>
             </h1>
-            <p className="text-lg md:text-xl text-indigo-100 mt-6 leading-relaxed">
+            <p className="text-lg md:text-xl text-emerald-50/90 mt-6 leading-relaxed">
               Welcome to SafeCom — your trusted marketplace for quality
               products. Discover amazing deals, enjoy fast delivery, and
               experience world-class service.
@@ -64,13 +72,13 @@ export default function Home() {
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/products"
-                className="bg-white text-indigo-700 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors"
+                className="bg-white text-emerald-700 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors shadow-lg"
               >
                 Browse Products
               </Link>
               <Link
                 href="/auth/signup"
-                className="border-2 border-white/30 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+                className="border-2 border-white/30 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors backdrop-blur-sm"
               >
                 Create Account
               </Link>
