@@ -96,7 +96,7 @@ export default function DeliveryDashboard() {
               </svg>
             </div>
           </div>
-          <p className="text-2xl font-bold text-gray-900">${totalEarnings.toFixed(2)}</p>
+          <p className="text-2xl font-bold text-gray-900">₦{totalEarnings.toFixed(2)}</p>
           <p className="text-sm text-gray-500">Est. Earnings</p>
         </div>
       </div>
@@ -152,7 +152,7 @@ export default function DeliveryDashboard() {
                 </div>
                 <div className="text-right">
                   <p className="font-semibold text-sm text-gray-900">
-                    ${order.totalAmount?.toFixed(2)}
+                    ₦{order.totalAmount?.toFixed(2)}
                   </p>
                   <span className={`text-xs font-medium px-2 py-0.5 rounded-full capitalize ${
                     order.status === "out_for_delivery"
@@ -188,7 +188,7 @@ export default function DeliveryDashboard() {
                 </div>
                 <div className="text-right">
                   <p className="font-semibold text-sm text-gray-900">
-                    ${order.totalAmount?.toFixed(2)}
+                    ₦{order.totalAmount?.toFixed(2)}
                   </p>
                   <span className="text-xs font-medium text-green-600">Completed</span>
                 </div>

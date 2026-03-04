@@ -204,7 +204,7 @@ export default function DeliveryOrdersPage() {
                         {config.label}
                       </span>
                       <span className="font-bold text-gray-900">
-                        ${order.totalAmount?.toFixed(2)}
+                        ₦{order.totalAmount?.toFixed(2)}
                       </span>
                       <svg
                         className={`w-5 h-5 text-gray-400 transition-transform ${isExpanded ? "rotate-180" : ""}`}
@@ -255,13 +255,13 @@ export default function DeliveryOrdersPage() {
                               {item.name} <span className="text-gray-400">x{item.quantity}</span>
                             </span>
                             <span className="font-medium text-gray-900">
-                              ${(item.price * item.quantity).toFixed(2)}
+                              ₦{(item.price * item.quantity).toFixed(2)}
                             </span>
                           </div>
                         ))}
                         <div className="border-t border-gray-100 pt-2 flex justify-between font-bold text-sm">
                           <span>Total</span>
-                          <span>${order.totalAmount?.toFixed(2)}</span>
+                          <span>₦{order.totalAmount?.toFixed(2)}</span>
                         </div>
                       </div>
                     </div>

@@ -152,7 +152,7 @@ export default function ProductDetailPage({ params }) {
           </div>
 
           <p className="text-3xl font-bold text-gray-900 mt-6">
-            ${product.price.toFixed(2)}
+            ₦{product.price.toFixed(2)}
           </p>
 
           <p className="text-gray-600 mt-4 leading-relaxed">

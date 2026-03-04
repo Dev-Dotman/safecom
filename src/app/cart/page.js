@@ -80,7 +80,7 @@ export default function CartPage() {
                   {item.name}
                 </h3>
                 <p className="text-indigo-600 font-bold mt-1">
-                  ${item.price.toFixed(2)}
+                  ₦{item.price.toFixed(2)}
                 </p>
 
                 <div className="flex items-center justify-between mt-3">
@@ -132,7 +132,7 @@ export default function CartPage() {
               <span>
                 Subtotal ({cart.reduce((s, i) => s + i.quantity, 0)} items)
               </span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>₦{cartTotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-gray-600">
               <span>Shipping</span>
@@ -140,7 +140,7 @@ export default function CartPage() {
             </div>
             <div className="border-t border-gray-100 pt-3 flex justify-between font-bold text-gray-900 text-base">
               <span>Total</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>₦{cartTotal.toFixed(2)}</span>
             </div>
           </div>
 

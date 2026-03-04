@@ -170,7 +170,7 @@ export default function OrdersPage() {
                     <span>
                       {item.name} × {item.quantity}
                     </span>
-                    <span>${(item.price * item.quantity).toFixed(2)}</span>
+                    <span>₦{(item.price * item.quantity).toFixed(2)}</span>
                   </div>
                 ))}
               </div>
@@ -184,7 +184,7 @@ export default function OrdersPage() {
                   </p>
                 </div>
                 <span className="font-bold text-gray-900">
-                  ${order.totalAmount.toFixed(2)}
+                  ₦{order.totalAmount.toFixed(2)}
                 </span>
               </div>
 

@@ -38,7 +38,7 @@ export default function AdminDashboard() {
     },
     {
       label: "Total Revenue",
-      value: `$${(stats?.totalRevenue || 0).toFixed(2)}`,
+      value: `₦${(stats?.totalRevenue || 0).toFixed(2)}`,    
       icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
       color: "bg-green-50 text-green-600",
     },
@@ -105,7 +105,7 @@ export default function AdminDashboard() {
                     </td>
                     <td className="py-3 px-2">{order.user?.name || "N/A"}</td>
                     <td className="py-3 px-2 font-medium">
-                      ${order.totalAmount.toFixed(2)}
+                      ₦{order.totalAmount.toFixed(2)}
                     </td>
                     <td className="py-3 px-2">
                       <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 capitalize">

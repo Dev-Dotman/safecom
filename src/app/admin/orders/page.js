@@ -125,7 +125,7 @@ export default function AdminOrdersPage() {
                   </div>
                 </div>
                 <p className="text-lg font-bold text-gray-900">
-                  ${order.totalAmount.toFixed(2)}
+                  ₦{order.totalAmount.toFixed(2)}
                 </p>
               </div>
 
@@ -140,7 +140,7 @@ export default function AdminOrdersPage() {
                       {item.name} × {item.quantity}
                     </span>
                     <span className="text-gray-600">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₦{(item.price * item.quantity).toFixed(2)}
                     </span>
                   </div>
                 ))}

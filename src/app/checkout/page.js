@@ -384,7 +384,7 @@ export default function CheckoutPage() {
                     </p>
                   </div>
                   <span className="text-sm font-medium">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    ₦{(item.price * item.quantity).toFixed(2)}
                   </span>
                 </div>
               ))}
@@ -393,7 +393,7 @@ export default function CheckoutPage() {
             <div className="border-t border-gray-100 pt-3 space-y-2 text-sm">
               <div className="flex justify-between text-gray-600">
                 <span>Subtotal</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>₦{cartTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-gray-600">
                 <span>Shipping</span>
@@ -401,7 +401,7 @@ export default function CheckoutPage() {
               </div>
               <div className="flex justify-between font-bold text-gray-900 text-base pt-2 border-t border-gray-100">
                 <span>Total</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>₦{cartTotal.toFixed(2)}</span>
               </div>
             </div>
 
@@ -410,7 +410,7 @@ export default function CheckoutPage() {
               disabled={loading}
               className="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors disabled:bg-indigo-400 mt-6"
             >
-              {loading ? "Placing Order..." : `Place Order - $${cartTotal.toFixed(2)}`}
+              {loading ? "Placing Order..." : `Place Order - ₦${cartTotal.toFixed(2)}`}
             </button>
           </div>
         </div>

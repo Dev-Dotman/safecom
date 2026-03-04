@@ -91,7 +91,7 @@ export default function AdminProductsPage() {
                     </div>
                   </td>
                   <td className="py-3 px-4 text-gray-600">{product.category}</td>
-                  <td className="py-3 px-4 font-medium">${product.price.toFixed(2)}</td>
+                  <td className="py-3 px-4 font-medium">₦{product.price.toFixed(2)}</td>
                   <td className="py-3 px-4">
                     <span className={`${product.stock > 0 ? "text-green-600" : "text-red-600"}`}>
                       {product.stock}
